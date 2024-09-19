@@ -19,7 +19,7 @@ After:
 ```xml
 from lxml import etree
 def safe_parse_xml(xml_string):
-    parser = etree.XMLParser(no_network=True, load_entities=False)
+    parser = etree.XMLParser(no_network=True, resolve_entities=False)
 ```
 
 ## Whitelisting / Input Validation
